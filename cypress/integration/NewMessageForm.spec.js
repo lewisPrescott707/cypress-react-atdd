@@ -4,8 +4,11 @@ import { mount } from 'cypress-react-unit-test';
 
 describe('<NewMessageForm />', () => {
   describe('clicking the save button', () => {
+    let spy;
+
     beforeEach(() => {
-      mount(<NewMessageForm />);
+      spy = cy.spy();
+      mount(<NewMessageForm onSave={spy} />);
 
       cy.get("[data-test='messageText']")
         .type('New message');
@@ -17,6 +20,10 @@ describe('<NewMessageForm />', () => {
     it('clears the text field', () => {
       cy.get("[data-test='messageText']")
         .should('have.value', '');
+    });
+
+    it('emits the "save" event', () => {
+      expect(spy).to.have.been.calledWith('New message');
     });
   });
 });
