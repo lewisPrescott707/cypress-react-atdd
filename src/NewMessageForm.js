@@ -7,6 +7,10 @@ const NewMessageForm = () => {
     setInputText(event.target.value);
   };
 
+  const handleSend = () => {
+    setInputText('');
+  };
+
   return (
     <div>
       <input
@@ -17,6 +21,7 @@ const NewMessageForm = () => {
       />
       <button
         data-testid="sendButton"
+        onClick={handleSend}
       >
         Send
       </button>
