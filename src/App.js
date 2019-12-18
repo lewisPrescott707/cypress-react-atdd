@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import NewMessageForm from './NewMessageForm';
-import MessageList from './MessageList';
+import NewListItemForm from './NewListItemForm';
+import List from './List';
 
 const App = () => {
-  const [messages, setMessages] = useState([]);
-  const handleSend = newMessage => {
-    setMessages([newMessage, ...messages]);
-  };
-
+  const [listItem, setListItem] = useState('');
+  const [listItems, setListItems] = useState([]);
   return (
     <div>
-      <NewMessageForm onSend={handleSend} />
-      <MessageList data={messages} />
+      <NewListItemForm 
+        item={listItem} 
+        onItemChange={setListItem}
+        items={listItems}
+        onItemsChange={setListItems} />
+      <List data={listItems} />
     </div>
   );
 };
