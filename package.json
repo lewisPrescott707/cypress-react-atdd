@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
     "react-scripts": "3.2.0"
   },
   "scripts": {
@@ -12,7 +12,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "ci:test": "cross-env CI=true react-scripts test",
-    "cypress:open": "cypress open",
+    "cy:open": "cypress open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -31,16 +31,16 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^9.3.2",
-    "babel-eslint": "^10.0.3",
-    "cross-env": "^7.0.3",
-    "cypress": "^3.6.0",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.16.0",
-    "prettier": "^1.19.1"
+    "@testing-library/react": "12.1.2",
+    "babel-eslint": "10.0.3",
+    "cross-env": "7.0.3",
+    "cypress": "9.1.0",
+    "eslint": "6.6.0",
+    "eslint-config-prettier": "6.5.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.16.0",
+    "prettier": "1.19.1"
   }
 }
