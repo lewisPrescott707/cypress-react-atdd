@@ -5,13 +5,9 @@ const NewListItemForm = (props) => {
   return (
     <div>
       <form onSubmit={event => {
-        console.log("event " + event);
         props.onItemsChange([props.item, ...props.items]);
-        console.log('props ' + props);
-        props.onItemChange('');
-        console.log('onItemChange');
+        //props.onItemChange('');
         event.preventDefault();
-        console.log('preventDefault');
       }}>
         <label>
           New Item:

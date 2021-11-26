@@ -2,7 +2,7 @@ import React from 'react';
 import { configure, render, fireEvent, cleanup } from '@testing-library/react';
 import List from '../List';
 
-describe('<List />', () => {
+describe.skip('<List />', () => {
   let getByTestId;
   let onItemChange;
 
