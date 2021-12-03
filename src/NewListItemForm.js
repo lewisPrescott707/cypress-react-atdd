@@ -22,7 +22,7 @@ const NewListItemForm = (props) => {
                  onChange={event => props.onItemChange(event.target.value)} 
           />
         </label>
-        <input type="submit" value="Add" data-cy="submitBtn" />
+        <input type="submit" value="Add" data-cy="addBtn" />
       </form>
     </div>
   );

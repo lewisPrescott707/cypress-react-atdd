@@ -18,7 +18,7 @@ describe('<NewListItemForm />', () => {
       onItemChange = jest.fn();
       onItemsChange = jest.fn();
       const { getByTestId } = render(<NewListItemForm item={'New message'} onItemChange={onItemChange} items={[]} onItemsChange={onItemsChange} />);
-      fireEvent.submit(getByTestId('submitBtn'));
+      fireEvent.submit(getByTestId('addBtn'));
     });
 
     it('clear input field', () => {
