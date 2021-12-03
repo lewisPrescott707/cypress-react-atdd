@@ -12,6 +12,7 @@ const App = () => {
         onItemChange={setListItem}
         items={listItems}
         onItemsChange={setListItems} />
+      <List data={listItems} />
     </div>
   );
 };
