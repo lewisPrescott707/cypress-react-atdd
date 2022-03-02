@@ -1,5 +1,8 @@
 Project to demo cypress ATDD style
 
+### How to use repo
+Follow instructions in TDD - JavaScript PDF
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
